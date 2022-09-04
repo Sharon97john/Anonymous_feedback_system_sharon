@@ -1,0 +1,48 @@
+.checkbox-item {
+    display: flex;
+
+    input {
+        width: 15px;
+        margin: 0px 10px;
+    }
+}
+
+.form-header {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.feedbk-form-wrapper {
+    width: 500px;
+
+    label {
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    input[type=text],
+    input[type=password],
+    .datepicker-common,
+    textarea {
+        position: relative;
+        border: 1px solid #ccc;
+        outline: none;
+        width: 100%;
+        border-radius: 5px;
+        padding: 8px;
+    }
+
+    textarea {
+        resize: none;
+        height: 200px;
+    }
+}
+
+.form-footer {
+    text-align: right;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}

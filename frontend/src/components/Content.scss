@@ -1,0 +1,45 @@
+.general-feedback-btn {
+    margin-right: 10px;
+    border: none;
+    background: #cdc8ca;
+    color: black;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    line-height: 12px;
+    background: #0e4d71;
+    color: white;
+}
+
+.content-container {
+    background: #f6f8fa;
+}
+
+.pop-wrap {
+    text-align: right;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    padding-right: 24px !important;
+}
+
+.legend-wrap {
+    display: flex;
+    margin-left: 20px;
+    gap: 10px;
+    span{
+        color: #0e4d71;
+        margin-left: 10px;
+    }
+}
+
+.salt-academic {
+    color: #3CAEA3;
+}
+
+.salt-prof-ser {
+    color: #20639B;
+}
+
+.salt-ser-fac {
+    color: #173F5F;
+}
