@@ -11,6 +11,21 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 @csrf_exempt
+def addUser(request):
+    if request.method == 'POST':
+        post_data = JSONParser().parse(request)
+        if (post_data):
+            response = users_table(full_name= post_data["full_name"],
+                        username= post_data["username"],
+                        password= post_data["password"],
+                        isAdmin= post_data["is_admin"],
+                        department_id= department.objects.get(
+                        department_name=post_data["department"]))
+            response.save()
+        return HttpResponse(json.dumps("Created user."), content_type="application/json")
+
+
+@csrf_exempt
 def login(request):
 
     if request.method == 'POST':
@@ -34,7 +49,6 @@ def login(request):
                     id=data["department_id"])
                 department_details = DepartmentSerializer(
                     department_details, many=True)
-                print(department_details.data)
                 data["department"] = department_details.data[0]
                 del data["department_id"]
                 result = {

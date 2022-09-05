@@ -2,7 +2,9 @@ from turtle import pos
 from typing_extensions import Self
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import department, department_types
+
+from users.models import users_table
+from .models import department, department_head, department_types
 import json
 from department.serializers import DepartmentSerializer
 from rest_framework.parsers import JSONParser
@@ -52,6 +54,29 @@ def insertBulkDepartments(request):
         #     response_data = department(department_name=item)
         #     response_data.save()
         department.objects.bulk_create([department(department_type=department_types.objects.get(
-            id=dept["type"]), department_name=dept["name"],
+            name=dept["type"]), department_name=dept["name"],
             number_of_students=dept["number_of_students"]) for dept in post_data['departments']])
-        return HttpResponse(json.dumps("done"), content_type="application/json")
+        return HttpResponse(json.dumps("Created all departments."), content_type="application/json")
+
+
+@csrf_exempt
+def insertBulkDepartmentTypes(request):
+
+    if request.method == 'POST':
+        post_data = JSONParser().parse(request)
+        department_types.objects.bulk_create([department_types(
+            name=deptType["name"]) for deptType in post_data['department_types']])
+        return HttpResponse(json.dumps("Created all department types."), content_type="application/json")
+
+
+@csrf_exempt
+def insertBulkDepartmentHeads(request):
+
+    if request.method == 'POST':
+        post_data = JSONParser().parse(request)
+        for dept in post_data['department_heads']:
+            response = department_head(department_id=department.objects.get(department_name=dept["name"]), 
+            user_id = users_table.objects.get(full_name=dept["user_id"]))
+            response.save()
+
+        return HttpResponse(json.dumps("Created all department head details."), content_type="application/json")

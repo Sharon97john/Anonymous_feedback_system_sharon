@@ -4,5 +4,7 @@ from . import views
 
 urlpatterns =[
     path('getAllDepartments/', views.getAllDepartments),
-    path('insertBulkDepartments/', views.insertBulkDepartments)
+    path('insertBulkDepartments/', views.insertBulkDepartments),
+    path('insertBulkDepartmentTypes/', views.insertBulkDepartmentTypes),
+    path('insertBulkDepartmentHeads/', views.insertBulkDepartmentHeads)
 ]
