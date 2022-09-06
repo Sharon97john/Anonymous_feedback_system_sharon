@@ -6,6 +6,7 @@ URL_DEP = "http://127.0.0.1:8000/department/insertBulkDepartments/"
 URL_DEPTYPE = "http://127.0.0.1:8000/department/insertBulkDepartmentTypes/"
 URL_DEPHEAD = "http://127.0.0.1:8000/department/insertBulkDepartmentHeads/"
 URL_ADDUSER = "http://127.0.0.1:8000/users/addUser/"
+URL_QTYPES = "http://127.0.0.1:8000/feedback/insertBulkQuestionTypes/"
 
 # location given here
 location = "Me"
@@ -407,12 +408,32 @@ department_heads = {
             "user_id": "admin"}
     ]
 }
-
+question_types = {
+    "question_answer_types": [
+        {
+            "id" :1,
+            "name": "text",
+            "question_type": "Text"
+        },
+        {
+            "id" :2,
+            "name": "checkbox",
+            "question_type": "Single Option Selection"
+        },
+        {
+            "id" :3,
+            "name": "radio",
+            "question_type": "Multiple Option Selection"
+        },
+    ]
+}
 
 # sending get request and saving the response as response object
 r = requests.post(url=URL_DEPTYPE, data=json.dumps(department_types))
 print(r.text)
 r = requests.post(url=URL_DEP, data=json.dumps(departments_list))
+print(r.text)
+r = requests.post(url=URL_QTYPES, data=json.dumps(question_types))
 print(r.text)
 
 
