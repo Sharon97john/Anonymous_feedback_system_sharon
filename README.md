@@ -16,6 +16,8 @@ The system is developed in Reactjs on the frontend and Django on the backend. Th
   ```
   npm install
   ```
+#### Django
+* Install django from this link https://docs.djangoproject.com/en/1.8/howto/windows/#:~:text=Django%20can%20be%20installed%20easily,version%20in%20the%20command%20prompt.
 
 ### Executing program
 
