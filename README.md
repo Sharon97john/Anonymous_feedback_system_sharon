@@ -22,5 +22,23 @@ The system is developed in Reactjs on the frontend and Django on the backend. Th
  ```
 pip install -r requirements.txt
  ```
+* Run the server and run the mastertablescripts.py script file. (Follow below commands)
+```
+py manage.py runserver
+```
+While running this script file:
+* For adding user as admin, give your working email id so that you can see the email sending feature.
+```
+py mastertablescripts.py
+```
 ### Executing program
+Once all the softwares are installed we can move onto executing the program.
+Run the frontend by:
+```
+npm start
+````
+Run the backend by:
+```
+py manage.py runserver
+```
 
