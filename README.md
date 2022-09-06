@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 py manage.py runserver
 ```
-* Run the below script file. For adding user as admin, give your working email id so that you can see the email sending feature.
+Run the below script file. For adding user as admin, give your working email id so that you can see the email sending feature.
 ```
 py mastertablescripts.py
 ```
