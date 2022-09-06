@@ -11,9 +11,8 @@ The system is developed in Reactjs on the frontend and Django on the backend. Th
 ### Installing
 
 * Reactjs
-Downloading the Node.js installation is the first step. You can download the appropriate Node.js for your OS from from https://nodejs.org/en/download/
-
-Once Node.js is installed, download or clone the folder onto your machine. Go to frontend folder, open terminal and run the following command to install all packages.
+**Downloading the Node.js installation is the first step. You can download the appropriate Node.js for your OS from from https://nodejs.org/en/download/
+**Once Node.js is installed, download or clone the folder onto your machine. Go to frontend folder, open terminal and run the following command to install all packages.
 npm install
 * Any modifications needed to be made to files/folders
 
