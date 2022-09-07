@@ -65,7 +65,7 @@ def insertBulkDepartmentTypes(request):
     if request.method == 'POST':
         post_data = JSONParser().parse(request)
         department_types.objects.bulk_create([department_types(
-            name=deptType["name"]) for deptType in post_data['department_types']])
+            name=deptType["name"], id=deptType["id"]) for deptType in post_data['department_types']])
         return HttpResponse(json.dumps("Created all department types."), content_type="application/json")
 
 
