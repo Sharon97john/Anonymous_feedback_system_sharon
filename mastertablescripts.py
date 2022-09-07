@@ -220,15 +220,19 @@ departments_list = {
 department_types = {
     "department_types": [
         {
+            "id": 1,
             "name": "Academic"
         },
         {
+            "id": 3,
             "name": "Services and facilities"
         },
         {
+            "id": 2,
             "name": "Professional services"
         },
         {
+            "id": 4,
             "name": "Research centres, institutes and groups"
         },
     ]
@@ -411,17 +415,17 @@ department_heads = {
 question_types = {
     "question_answer_types": [
         {
-            "id" :1,
+            "id": 1,
             "name": "text",
             "question_type": "Text"
         },
         {
-            "id" :2,
+            "id": 2,
             "name": "checkbox",
             "question_type": "Single Option Selection"
         },
         {
-            "id" :3,
+            "id": 3,
             "name": "radio",
             "question_type": "Multiple Option Selection"
         },
