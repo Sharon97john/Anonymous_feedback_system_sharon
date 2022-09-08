@@ -1,0 +1,44 @@
+.department-home {
+    background: transparent;
+    color: #073460;
+}
+
+.custom-btn {
+    float: right;
+    margin-right: 10px;
+}
+
+.feedback-list-wrap {
+
+    .title-header {
+        font-weight: 500;
+        font-size: 17px;
+        width: 100%;
+        height: 50px;
+
+        .heading-btn-wrap {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .title-border-feedback {
+        background: linear-gradient(45deg, #073460 60%, #70f1cf 100%);
+        height: 2px;
+    }
+
+    .title-border-vote {
+        background: linear-gradient(45deg, #073460 0%, #e8c527 100%);
+        height: 2px;
+    }
+}
+
+.cards-list-wrapper {
+    display: flex;
+    gap: 15px;
+    padding-right: 15px;
+}
