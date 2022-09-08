@@ -1,0 +1,86 @@
+.new-question-section {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: #ebe9e9;
+
+    .action-wrapper {
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-evenly;
+
+
+        .rw-dropdown-list {
+            width: 80%;
+        }
+    }
+}
+
+.react-date-picker__wrapper {
+    outline: none;
+    border: none !important;
+}
+
+.new-question {
+    input[type="text"] {
+        width: 95%;
+    }
+
+}
+
+.questions-section {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.options-wrapper {
+    margin: 10px;
+    padding: 10px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        float: left;
+    }
+
+    .item-options {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.delete-icon{
+    color: red;
+}
+.new-question {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.form-body {
+    max-height: 400px;
+    overflow: auto;
+}
+
+.question-item {
+
+    text-align: right;
+}
+
+.cutom-textarea {
+    height: 100px !important;
+}
+
+.chart-wrapper {
+    width: 700px;
+    height: 500px;
+}
+
+.print-btn-wrap {
+    text-align: right;
+    margin-right: 10px;
+}

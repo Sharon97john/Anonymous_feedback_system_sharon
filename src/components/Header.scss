@@ -1,0 +1,46 @@
+.topnav {
+  overflow: hidden;
+  padding-top: 10px;
+  color: #fff;
+  background: #f6f8fa;
+
+  h2 {
+    color: #d8e2ec;
+  }
+
+  .header-wrap {
+    padding: 0px 40px 0px 20px;
+    // border-bottom: 1px solid #ccc;
+    gap: 15px;
+  }
+
+  .header-link-item {
+    border-left: 1px solid #ccc;
+    border-radius: 5px;
+    color: #0e4d71;
+
+    span {
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    padding: 9px;
+    background: #ffffff;
+    margin-left: 10px;
+
+
+    &:hover {
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  }
+}
+
+
+.university-logo {
+  height: 65px;
+  // width: 170px;
+}
